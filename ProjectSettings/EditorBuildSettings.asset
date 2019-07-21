@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ExperienceMoon.unity
     guid: bfc4109106f3d4bb99bdca258d843d4f
+  - enabled: 1
+    path: Assets/Scenes/ExperienceMars.unity
+    guid: b3061e2f7108e4b3cb97320660a0b75c
   m_configObjects: {}

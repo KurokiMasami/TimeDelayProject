@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GotoMoonButton : MonoBehaviour {
+public class GotoMarsButton : MonoBehaviour {
 
     public AudioClip pushsound;
     AudioSource audioSource;
@@ -25,11 +25,11 @@ public class GotoMoonButton : MonoBehaviour {
 
     private void OnTriggerEnter(Collider col)
         {
-        if (col.gameObject.tag == "Hand")
+        if(col.gameObject.tag == "Hand")
             audioSource.PlayOneShot(pushsound, 1.0F);
             playerTimer.enabled = true;
             earthTimer.enabled = true;
-            ArrowAnim.SetBool("ArrowAnim_moon", true);
+            ArrowAnim.SetBool("ArrowAnim_mars", true);
 
             childObj.transform.parent = parentObj.transform;
     }

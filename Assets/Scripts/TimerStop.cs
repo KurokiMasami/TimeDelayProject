@@ -5,12 +5,12 @@ using UnityEngine;
 public class TimerStop : MonoBehaviour {
 
     public PlayerTimer playerTimer;
-    public EarthTimer_moon earthTimer_moon;
+    public EarthTimer earthTimer;
 
     void TimerDisplayFreeze () {
 
         playerTimer.on = false;
-        earthTimer_moon.on = false;
+        earthTimer.on = false;
 
     }
 }

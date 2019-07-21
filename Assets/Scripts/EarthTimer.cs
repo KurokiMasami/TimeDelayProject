@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EarthTimer_moon : MonoBehaviour {
+public class EarthTimer : MonoBehaviour {
 
     private int minute;
     private float seconds;
@@ -40,7 +40,7 @@ public class EarthTimer_moon : MonoBehaviour {
 
         if (on == true)
         {
-            timerText.text = minute.ToString("00") + ":" + seconds.ToString("00.0");
+            timerText.text = "Earth "+ "\n" + minute.ToString("00") + ":" + seconds.ToString("00.0");
         }
         else if (on == false)
         {
