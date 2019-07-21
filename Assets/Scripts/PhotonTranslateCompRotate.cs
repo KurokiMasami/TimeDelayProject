@@ -26,6 +26,9 @@ public class PhotonTranslateCompRotate : MonoBehaviour {
 
     public CircularMotion circularMotion; //円運動スクリプトを格納する変数
 
+    public AudioClip pushsound;
+    AudioSource audioSource;
+
     void Start()
     {
         v = 2 * z;
@@ -42,6 +45,8 @@ public class PhotonTranslateCompRotate : MonoBehaviour {
         velocity = velocityUp;
 
         //speedConversion = circularMotion.speedConversionControl; //円運動スクリプトの補正スピード変数を取得
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -84,6 +89,7 @@ public class PhotonTranslateCompRotate : MonoBehaviour {
         {
             velocity = velocityUp;
             //Debug.Log("Under");
+            audioSource.PlayOneShot(pushsound, 1.0F);
         }
 
 

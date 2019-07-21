@@ -24,6 +24,9 @@ public class PhotonTranslateComp : MonoBehaviour {
     public GameObject Top; //上面オブジェクト
     public GameObject Under; //下面オブジェクト
 
+    public AudioClip pushsound;
+    AudioSource audioSource;
+
     void Start()
     {
         v = 2 * z;
@@ -38,6 +41,8 @@ public class PhotonTranslateComp : MonoBehaviour {
         speedConversion = speed / distance;
 
         velocity = velocityUp;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -75,7 +80,8 @@ public class PhotonTranslateComp : MonoBehaviour {
         else if (col.gameObject.tag == "Under")
         {
             velocity = velocityUp;
-            Debug.Log("Under");
+            //Debug.Log("Under");
+            audioSource.PlayOneShot(pushsound, 0.1F);
         }
 
     }
