@@ -22,21 +22,31 @@ public class GotoMoonButton : MonoBehaviour {
         ArrowAnim_moon.SetBool("ArrowAnim_moon", false);
     }
 
+    private void OnTriggerEnter(Collider other)
+        {
+//            audioSource.PlayOneShot(pushsound, 1.0F);
+            playerTimer.enabled = true;
+            earthTimer_moon.enabled = true;
+            ArrowAnim_moon.SetBool("ArrowAnim_moon", true);
+
+            childObj.transform.parent = parentObj.transform;
+    }
+
     /*
-    void OnCollosionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "hand")
         {
             audioSource.PlayOneShot(pushsound, 1.0F);
             playerTimer.enabled = true;
             earthTimer_moon.enabled = true;
-            ArrowAnim_m.SetBool("ArrowAnim_moon", true);
+            ArrowAnim_moon.SetBool("ArrowAnim_moon", true);
             
             childObj.transform.parent = parentObj.transform;          
         }
     }*/
 
-
+    /*
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -47,6 +57,6 @@ public class GotoMoonButton : MonoBehaviour {
 
             childObj.transform.parent = parentObj.transform;
         }
-    }
+    }*/
 
 }
