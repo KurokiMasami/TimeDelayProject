@@ -41,8 +41,8 @@ public class EarthTimer : MonoBehaviour {
         if (on == true)
         {
             //２行バージョン
-            //timerText.text = "Earth" + "\n" + minute.ToString("00") + ":" + seconds.ToString("00.0");
-            timerText.text = "Earth  " + minute.ToString("00") + ":" + seconds.ToString("00.0");
+            //timerText.text = "EARTH" + "\n" + minute.ToString("00") + ":" + seconds.ToString("00.0");
+            timerText.text = "EARTH " + minute.ToString("00") + ":" + seconds.ToString("00.0");
         }
         else if (on == false)
         {
