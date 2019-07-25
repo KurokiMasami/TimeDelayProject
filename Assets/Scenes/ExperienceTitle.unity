@@ -1721,7 +1721,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4485566fd48ba49b6972399884af4e69, type: 3}
-    m_FontSize: 24
+    m_FontSize: 21
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1732,7 +1732,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5149\u6642\u8A08"
+  m_Text: "\u5149\u6642\u8A08\u306E\u4E16\u754C"
 --- !u!222 &1701739326
 CanvasRenderer:
   m_ObjectHideFlags: 0
