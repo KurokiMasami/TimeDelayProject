@@ -42,7 +42,7 @@ public class EarthTimer : MonoBehaviour {
         {
             //２行バージョン
             //timerText.text = "EARTH" + "\n" + minute.ToString("00") + ":" + seconds.ToString("00.0");
-            timerText.text = "EARTH " + minute.ToString("00") + ":" + seconds.ToString("00.0");
+            timerText.text = "EARTH / " + minute.ToString("00") + ":" + seconds.ToString("00.0");
         }
         else if (on == false)
         {

@@ -14,6 +14,8 @@ public class GotoMarsButton : MonoBehaviour {
     public GameObject parentObj;
     public GameObject childObj;
 
+    public GameObject DescriptionText;
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -21,6 +23,8 @@ public class GotoMarsButton : MonoBehaviour {
         earthTimer.enabled = false;
         ArrowAnim.SetBool("ArrowAnim_moon", false);
         ArrowAnim.SetBool("ArrowAnim_mars", false);
+
+        DescriptionText.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider col)
@@ -32,6 +36,8 @@ public class GotoMarsButton : MonoBehaviour {
             ArrowAnim.SetBool("ArrowAnim_mars", true);
 
             childObj.transform.parent = parentObj.transform;
+
+            DescriptionText.SetActive(true);
     }
 
     /*

@@ -43,6 +43,7 @@ public class Counter : MonoBehaviour {
 
 
     void SetTimer(){
-        timerText.text = string.Format("Time:{0}", timer);
+        //timerText.text = string.Format("Time:{0}", timer);
+        timerText.text = string.Format("{0}", timer);
     }
 }
