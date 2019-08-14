@@ -7,6 +7,6 @@ public class SelectMarsButton : MonoBehaviour {
 
     public void OnClick()
     {
-        SceneManager.LoadScene("ExperienceMars");
+        SceneManager.LoadScene("ExperienceMarsDescription");
     }
 }

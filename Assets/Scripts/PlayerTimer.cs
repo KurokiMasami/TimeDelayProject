@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerTimer : MonoBehaviour {
 
@@ -11,7 +12,7 @@ public class PlayerTimer : MonoBehaviour {
     //private float oldSeconds;
     //　タイマー表示用テキスト
     [SerializeField]
-    private TextMesh timerText;
+    private TextMeshPro timerText;
     public bool on = true;
 
     void Start()

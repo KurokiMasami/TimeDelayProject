@@ -5,25 +5,31 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TitleScene.unity
     guid: 4bd8ef712311049b784d9a9543a00edd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PhotonClockDescription.unity
     guid: 705ef1c84c2e148de8384c15ea9340a9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PhotonClock.unity
     guid: cc77d23ae427e47b19a95816713230ea
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ExperienceTitleDescription.unity
     guid: 943cd0d33d74945cab9be2807de25d6d
   - enabled: 1
     path: Assets/Scenes/ExperienceTitle.unity
     guid: 70d0fd230445346879c14f347496f9f9
   - enabled: 1
+    path: Assets/Scenes/ExperienceMoonDescription.unity
+    guid: a30b7ee43ceab45a99422b515fd0c6b5
+  - enabled: 1
     path: Assets/Scenes/ExperienceMoon.unity
-    guid: bfc4109106f3d4bb99bdca258d843d4f
+    guid: 7274e845f284c4858871e3a16c9ee3d2
+  - enabled: 1
+    path: Assets/Scenes/ExperienceMarsDescription.unity
+    guid: 02d121a1fdbf247619e03eaa6315d281
   - enabled: 1
     path: Assets/Scenes/ExperienceMars.unity
-    guid: b3061e2f7108e4b3cb97320660a0b75c
+    guid: c2d4153648d0240c7802ee5b34f4ad84
   m_configObjects: {}

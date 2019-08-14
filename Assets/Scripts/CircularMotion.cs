@@ -23,7 +23,7 @@ public class CircularMotion : MonoBehaviour {
 
     float distance; //光子が進む距離
 
-    float speed = 2; // 光の速度（m/s）
+    public float photonSpeed = 2; // 光の速度（m/s）
     public float speedConversionControl; //補正スピード
 
 
@@ -43,12 +43,12 @@ public class CircularMotion : MonoBehaviour {
     void Start()
     {
         z = zControl.master_z; //Buttonクリックにより設定済みのマスターzを取得し、zに代入
-        v = 2 * z;
-        x = Mathf.Sqrt(-Mathf.Pow(v, 2) / (Mathf.Pow(v, 2) - 4));
+        v = photonSpeed * z;
+        x = Mathf.Sqrt(-Mathf.Pow(v, 2) / (Mathf.Pow(v, 2) - Mathf.Pow(photonSpeed, 2)));
         Debug.Log("x=" + x);
 
         distance = Mathf.Sqrt(Mathf.Pow(x, 2) + Mathf.Pow(y, 2));
-        speedConversionControl = speed / distance;
+        speedConversionControl = photonSpeed / distance;
 
         position = InputTracking.GetLocalPosition(XRNode.CenterEye);
     }

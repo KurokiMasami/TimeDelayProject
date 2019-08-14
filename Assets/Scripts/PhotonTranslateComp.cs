@@ -18,19 +18,22 @@ public class PhotonTranslateComp : MonoBehaviour {
 
     float distance; //光子が進む距離
 
-    float speed = 2; // 光の速度（m/s）
+    public float photonSpeed = 2; // 光の速度（m/s）
     float speedConversion; //補正スピード
 
     public GameObject Top; //上面オブジェクト
     public GameObject Under; //下面オブジェクト
+    public GameObject Case; //ケースオブジェクト
+    public GameObject Counter; //カウンターオブジェクト
+    public GameObject CounterText; //カウンターテキストオブジェクト
 
     public AudioClip pushsound;
     AudioSource audioSource;
 
     void Start()
     {
-        v = 2 * z;
-        x = Mathf.Sqrt(-Mathf.Pow(v, 2) / (Mathf.Pow(v, 2)-4));
+        v = photonSpeed * z;
+        x = Mathf.Sqrt(-Mathf.Pow(v, 2) / (Mathf.Pow(v, 2)- Mathf.Pow(photonSpeed, 2)));
         //Debug.Log("x=" + x);
 
         velocityUp = new Vector3(x, y, 0);
@@ -38,7 +41,7 @@ public class PhotonTranslateComp : MonoBehaviour {
         velocitySide = new Vector3(1, 0, 0);
 
         distance = Mathf.Sqrt(Mathf.Pow(x, 2) + Mathf.Pow(y, 2));
-        speedConversion = speed / distance;
+        speedConversion = photonSpeed / distance;
 
         velocity = velocityUp;
 
@@ -62,6 +65,9 @@ public class PhotonTranslateComp : MonoBehaviour {
         this.transform.Translate(velocity * Time.deltaTime * speedConversion);
         Top.transform.Translate(velocitySide * Time.deltaTime * v);
         Under.transform.Translate(velocitySide * Time.deltaTime * v);
+        Case.transform.Translate(velocitySide * Time.deltaTime * v);
+        Counter.transform.Translate(velocitySide * Time.deltaTime * v);
+        CounterText.transform.Translate(velocitySide * Time.deltaTime * v);
 
     }
 

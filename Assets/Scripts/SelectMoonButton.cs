@@ -7,6 +7,6 @@ public class SelectMoonButton : MonoBehaviour {
 
     public void OnClick()
     {
-        SceneManager.LoadScene("ExperienceMoon");
+        SceneManager.LoadScene("ExperienceMoonDescription");
     }
 }

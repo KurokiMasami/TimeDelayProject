@@ -18,11 +18,11 @@ public class PhotonTranslateCompRotate : MonoBehaviour {
 
     //float distance; //光子が進む距離
 
-    //float speed = 2; // 光の速度（m/s）
+    public float photonSpeed = 2; // 光の速度（m/s）
     float speedConversion; //補正スピード
 
-    public GameObject Top; //上面オブジェクト
-    public GameObject Under; //下面オブジェクト
+    //public GameObject Top; //上面オブジェクト
+    //public GameObject Under; //下面オブジェクト
 
     public CircularMotion circularMotion; //円運動スクリプトを格納する変数
 
@@ -31,8 +31,8 @@ public class PhotonTranslateCompRotate : MonoBehaviour {
 
     void Start()
     {
-        v = 2 * z;
-        x = Mathf.Sqrt(-Mathf.Pow(v, 2) / (Mathf.Pow(v, 2)-4));
+        v = photonSpeed * z;
+        x = Mathf.Sqrt(-Mathf.Pow(v, 2) / (Mathf.Pow(v, 2)- Mathf.Pow(photonSpeed, 2)));
         //Debug.Log("x=" + x);
 
         velocityUp = new Vector3(x, y, 0);
@@ -69,8 +69,8 @@ public class PhotonTranslateCompRotate : MonoBehaviour {
 
 
         this.transform.Translate(velocity * Time.deltaTime * speedConversion);
-        Top.transform.Translate(velocitySide * Time.deltaTime * v);
-        Under.transform.Translate(velocitySide * Time.deltaTime * v);
+        //Top.transform.Translate(velocitySide * Time.deltaTime * v);
+        //Under.transform.Translate(velocitySide * Time.deltaTime * v);
 
     }
 

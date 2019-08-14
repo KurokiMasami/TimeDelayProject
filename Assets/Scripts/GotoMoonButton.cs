@@ -9,22 +9,24 @@ public class GotoMoonButton : MonoBehaviour {
 
     public PlayerTimer playerTimer;
     public EarthTimer earthTimer;
+    public EarthTimer earthTimer2;
     public Animator ArrowAnim;
 
     public GameObject parentObj;
     public GameObject childObj;
 
-    public GameObject DescriptionText;
+    //public GameObject DescriptionText;
 
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
         playerTimer.enabled = false;
         earthTimer.enabled = false;
+        earthTimer2.enabled = false;
         ArrowAnim.SetBool("ArrowAnim_moon", false);
         ArrowAnim.SetBool("ArrowAnim_mars", false);
 
-        DescriptionText.SetActive(false);
+        //DescriptionText.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider col)
@@ -33,11 +35,12 @@ public class GotoMoonButton : MonoBehaviour {
             audioSource.PlayOneShot(pushsound, 1.0F);
             playerTimer.enabled = true;
             earthTimer.enabled = true;
+            earthTimer2.enabled = true;
             ArrowAnim.SetBool("ArrowAnim_moon", true);
 
             childObj.transform.parent = parentObj.transform;
 
-            DescriptionText.SetActive(true);
+            //DescriptionText.SetActive(true);
     }
 
     /*

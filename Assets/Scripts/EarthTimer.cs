@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class EarthTimer : MonoBehaviour {
 
@@ -11,7 +12,7 @@ public class EarthTimer : MonoBehaviour {
     //private float oldSeconds;
     //　タイマー表示用テキスト
     [SerializeField]
-    private TextMesh timerText;
+    private TextMeshPro timerText;
     public bool on = true;
 
     [SerializeField]
@@ -42,7 +43,11 @@ public class EarthTimer : MonoBehaviour {
         {
             //２行バージョン
             //timerText.text = "EARTH" + "\n" + minute.ToString("00") + ":" + seconds.ToString("00.0");
-            timerText.text = "EARTH / " + minute.ToString("00") + ":" + seconds.ToString("00.0");
+
+            //"EARTH / "付きバージョン
+            //timerText.text = "EARTH / " + minute.ToString("00") + ":" + seconds.ToString("00.0");
+
+            timerText.text = minute.ToString("00") + ":" + seconds.ToString("00.0");
         }
         else if (on == false)
         {
