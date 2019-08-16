@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SelectPhotonClockButton : MonoBehaviour {
+public class LS_ExperienceMarsDescription : MonoBehaviour {
 
     public void OnClick()
     {
-        SceneManager.LoadScene("PhotonClock");
+        SceneManager.LoadScene("ExperienceMarsDescription");
     }
 }

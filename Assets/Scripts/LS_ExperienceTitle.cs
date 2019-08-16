@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GotoIndexButton : MonoBehaviour {
+public class LS_ExperienceTitle : MonoBehaviour {
 
     public AudioClip pushsound;
     AudioSource audioSource;

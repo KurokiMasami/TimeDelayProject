@@ -8,14 +8,14 @@ public class PhotonClockSpeedButton : MonoBehaviour {
     public PhotonClockZControl zControl; //共通使用するマスターz（移動速度の光速に対する比率）参照用変数
     public float percentage;
 
-    public Canvas moveControlCanvas;
+    public Canvas startCanvas;
     CanvasGroup thisCV;
     CanvasGroup otherCV;
 
     private void Start()
     {
         thisCV = GetComponentInParent<CanvasGroup>();
-        otherCV = moveControlCanvas.GetComponent<CanvasGroup>();
+        otherCV = startCanvas.GetComponent<CanvasGroup>();
     }
 
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SelectPhotonClockDescriptionButton : MonoBehaviour {
+public class LS_PhotonClockDescription : MonoBehaviour {
 
     public void OnClick()
     {

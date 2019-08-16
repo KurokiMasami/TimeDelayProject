@@ -14,5 +14,6 @@ public class PhotonClockPauseButton : MonoBehaviour {
         {
             Time.timeScale = 0;
         }
+
     }
 }

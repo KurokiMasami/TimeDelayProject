@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SelectExperienceDescriptionButton : MonoBehaviour {
+public class LS_ExperienceMoonDescription : MonoBehaviour {
 
     public void OnClick()
     {
-        SceneManager.LoadScene("ExperienceTitleDescription");
+        SceneManager.LoadScene("ExperienceMoonDescription");
     }
 }
