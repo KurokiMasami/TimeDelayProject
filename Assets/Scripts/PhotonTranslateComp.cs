@@ -87,7 +87,7 @@ public class PhotonTranslateComp : MonoBehaviour {
         {
             velocity = velocityUp;
             //Debug.Log("Under");
-            audioSource.PlayOneShot(pushsound, 0.1F);
+            audioSource.PlayOneShot(pushsound, 0.5F);
         }
 
     }

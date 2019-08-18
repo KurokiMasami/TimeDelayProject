@@ -10,11 +10,11 @@ public class PhotonClockStartButton : MonoBehaviour
     public GameObject circularMotion;
 
     public Canvas moveControlCanvas;
-    CanvasGroup thisCV;
+    //CanvasGroup thisCV;
     CanvasGroup otherCV;
 
     //alpha=0でたまに日表示されない対策のため追加
-    public GameObject myCanvas;
+    //public GameObject myCanvas;
 
     private void Start()
     {
@@ -25,7 +25,7 @@ public class PhotonClockStartButton : MonoBehaviour
         //moveRotatePhoton.GetComponent<PhotonTranslateCompRotate_2>().enabled = false;
         //circularMotion.GetComponent<CircularMotion_2>().enabled = false;
 
-        thisCV = GetComponentInParent<CanvasGroup>();
+        //thisCV = GetComponentInParent<CanvasGroup>();
         otherCV = moveControlCanvas.GetComponent<CanvasGroup>();
     }
 
@@ -38,10 +38,10 @@ public class PhotonClockStartButton : MonoBehaviour
         //moveRotatePhoton.GetComponent<PhotonTranslateCompRotate_2>().enabled = true;
         //circularMotion.GetComponent<CircularMotion_2>().enabled = true;
 
-        thisCV.alpha = 0;
+        //thisCV.alpha = 0;
         otherCV.alpha = 1;
 
         //alpha=0でたまに非表示されない対策のため追加
-        myCanvas.SetActive(false);
+        //myCanvas.SetActive(false);
     }
 }
