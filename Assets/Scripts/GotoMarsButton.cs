@@ -15,7 +15,8 @@ public class GotoMarsButton : MonoBehaviour {
     public GameObject parentObj;
     public GameObject childObj;
 
-    //public GameObject DescriptionText;
+    public GameObject DescriptionText01;
+    public GameObject DescriptionText02;
 
     private void Start()
     {
@@ -26,7 +27,8 @@ public class GotoMarsButton : MonoBehaviour {
         ArrowAnim.SetBool("ArrowAnim_moon", false);
         ArrowAnim.SetBool("ArrowAnim_mars", false);
 
-        //DescriptionText.SetActive(false);
+        DescriptionText01.SetActive(true);
+        DescriptionText02.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider col)
@@ -40,7 +42,7 @@ public class GotoMarsButton : MonoBehaviour {
 
             childObj.transform.parent = parentObj.transform;
 
-            //DescriptionText.SetActive(true);
+            DescriptionText01.SetActive(false);
     }
 
     /*

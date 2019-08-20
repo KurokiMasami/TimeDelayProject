@@ -6,7 +6,7 @@ public class ButtonSwap : MonoBehaviour {
 
     public GameObject playButton;
     public GameObject returnButton;
-    //public GameObject DescriptionText;
+    public GameObject DescriptionText02;
 
     //MeshRenderer play_mr;
     //MeshRenderer return_mr;
@@ -29,7 +29,7 @@ public class ButtonSwap : MonoBehaviour {
         playButton.SetActive(false);
         returnButton.SetActive(true);
 
-        //DescriptionText.SetActive(false);
+        DescriptionText02.SetActive(true);
 
     }
 }

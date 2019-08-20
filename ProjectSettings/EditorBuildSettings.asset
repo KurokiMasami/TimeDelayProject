@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScene.unity
     guid: 4bd8ef712311049b784d9a9543a00edd
   - enabled: 1
-    path: Assets/Scenes/PhotonClockDescription.unity
-    guid: 4078e41a4dc584661be33cd73d5490bb
+    path: Assets/Scenes/PhotonClockDescription_01.unity
+    guid: 5556148350eae4cd9971f4a5b4c2429f
+  - enabled: 1
+    path: Assets/Scenes/PhotonClockDescription_02.unity
+    guid: 7b8ed4544a4e24b8cb496b0801db40af
   - enabled: 1
     path: Assets/Scenes/PhotonClock.unity
     guid: 19728df757e06493b86e50bf157e07f9
